@@ -1,6 +1,10 @@
 # Without::Rails
 
-TODO: Write a gem description
+without-rails wraps [withOut](https://github.com/ukoloff/without)
+template engine for simple use with rails asset pipeline.
+The gem includes the development (non-minified) source 
+for ease of exploration.
+The asset pipeline will minify in production.
 
 ## Installation
 
@@ -18,12 +22,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the following directive to your Javascript manifest file 
+(application.js):
 
-## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```js
+//= require without
+```
+
+or to some .coffee file:
+
+
+```coffee
+#= require without
+```
+
+Later, inside any .coffee you can:
+
+```coffee
+t = withOut.$compile ->
+  div id: @
+
+$('#test').html t 'me'
+
+```
