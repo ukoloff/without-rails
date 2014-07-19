@@ -1,5 +1,7 @@
 # Without::Rails
 
+[![Gem Version](https://badge.fury.io/rb/without-rails.svg)](http://badge.fury.io/rb/without-rails)
+
 without-rails wraps [withOut](https://github.com/ukoloff/without)
 template engine for simple use with rails asset pipeline.
 The gem includes the development (non-minified) source 
