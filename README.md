@@ -4,7 +4,7 @@
 
 without-rails wraps [withOut](https://github.com/ukoloff/without)
 template engine for simple use with rails asset pipeline.
-The gem includes the development (non-minified) source 
+The gem includes the development (non-minified) source
 for ease of exploration.
 The asset pipeline will minify in production.
 
@@ -24,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-Add the following directive to your Javascript manifest file 
+Add the following directive to your Javascript manifest file
 (application.js):
 
 
@@ -42,7 +42,7 @@ or to some .coffee file:
 Later, inside any .coffee you can:
 
 ```coffee
-t = withOut.$compile ->
+t = withOut ->
   div id: @
 
 $('#test').html t 'me'
