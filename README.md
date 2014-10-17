@@ -43,8 +43,8 @@ Later, inside any .coffee you can:
 
 ```coffee
 t = withOut ->
-  div id: @
+  h1 'Hello, ', @, '!'
 
-$('#test').html t 'me'
+$('#test').html t 'world' # <h1>Hello, world!</h1>
 
 ```
