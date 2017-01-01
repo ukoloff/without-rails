@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/ukoloff/without-rails"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = Dir['lib/**/*', 'vendor/**/*']
   spec.require_paths = ["lib"]
 
   spec.add_dependency  "railties"
